@@ -16,16 +16,22 @@ Code for the German Enigma machine used in WW2.
 
 ### Classe Machine
 #### functions
+
+initRotors
 configure
-convert		
-convertChar 
+advanceRotors
+
 ### Classe Reflector
 #### functions
+
 reflectorFactory
+
 ### Classe Rotor
 #### functions
+
 rotorFactory
-createBCipher
+toLetter
+toIndex
 
 ## Tricks & tips
 
