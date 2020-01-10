@@ -6,9 +6,11 @@ import org.junit.Test;
 
 public class ReflectorTest {
 
-	@Test
-	public void test() {
-		fail("Not yet implemented");
-	}
 
+	@Test
+	public void ReflectorChar() {
+	    Reflector p = new Reflector("(PNL) ");
+	    
+}
+	
 }
