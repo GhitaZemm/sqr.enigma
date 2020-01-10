@@ -13,16 +13,19 @@ Code for the German Enigma machine used in WW2.
 - that ends
 
 ## Functions to be tested
-Hereafter, for each classes give function to be tested 
 
 ### Classe Machine
 #### functions
-
+configure
+convert		
+convertChar 
 ### Classe Reflector
-#### function
-
+#### functions
+reflectorFactory
 ### Classe Rotor
-#### function
+#### functions
+rotorFactory
+createBCipher
 
 ## Tricks & tips
 

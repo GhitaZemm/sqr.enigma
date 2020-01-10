@@ -7,11 +7,12 @@ public class Rotor {
     private int[] bcipher = new int[26];
     private int notch1 = -1;
     private int notch2 = -1;
-
+    
+    //getters
     public int getPosition() {
         return position;
     }
-
+    //setters
     public void setPosition(int posn) {
         position = posn;
     }
@@ -67,7 +68,8 @@ public class Rotor {
     protected static char toLetter(int p) {
         return (char)(p + 'A');
     }
-
+    
+    //function to index
     protected static int toIndex(char c) {
         return c - 'A';
     }

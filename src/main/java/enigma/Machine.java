@@ -6,23 +6,27 @@ public class Machine {
 	private Rotor middleRotor;
 	private Rotor rightRotor;
 	private Reflector reflector;
-
+	
+	
 	public void initRotors(Reflector reflector, Rotor left, Rotor middle, Rotor right) {
+		// Function that initializes the 4 variables; all the rotors and the reflector.
 		this.reflector = reflector;
 		leftRotor = left;
 		middleRotor = middle;
 		rightRotor = right;
 	}
-
+    
 	public void setPositions(String setting) {
+		// Function that gives position of the rotors and the reflector at any time.
 		char[] charSettings = setting.toCharArray();
 		reflector.setPosition(Rotor.toIndex(charSettings[0]));
 		leftRotor.setPosition(Rotor.toIndex(charSettings[1]));
 		middleRotor.setPosition(Rotor.toIndex(charSettings[2]));
 		rightRotor.setPosition(Rotor.toIndex(charSettings[3]));
 	}
-	
+    
 	public void configure(Reflector reflector, Rotor left, Rotor middle, Rotor right, String setting) {
+		// Function which allows to set or configure the position 
 		this.initRotors(reflector, left, middle, right);
 		this.setPositions(setting);
 
@@ -52,7 +56,8 @@ public class Machine {
 		return Rotor.toLetter(output);
 
 	}
-
+	
+	//
 	void advanceRotors() {
 		boolean advanceLeft = false;
 		boolean advanceMiddle = false;

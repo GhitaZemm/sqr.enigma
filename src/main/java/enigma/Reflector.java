@@ -5,7 +5,7 @@ package enigma;
  */
 public class Reflector extends Rotor {
 	
-	int[] reflection;
+	int[] reflection; // variable to present the reflection done by the reflector.
 	
 	public static Reflector reflectorFactory(String str){
 		char[] s = str.trim().replace(" ", "").toCharArray();
@@ -16,7 +16,7 @@ public class Reflector extends Rotor {
 		return new Reflector(cipher);
 	}
 	
-	private Reflector(int[] r){
+	private Reflector(int[] r){ //constructor
 		reflection = r;
 	}
         
